@@ -68,9 +68,9 @@ void play_game(){
 }
 
 void show_board(Game g){
-    for(int x = 0; x < new_state.size(); x++){
-        for(int y = 0; y < new_state[x].size(); y++){
-            cout << new_state[x][y];
+    for(int x = 0; x < g.board.size(); x++){
+        for(int y = 0; y < g.board[x].size(); y++){
+            cout << g.board[x][y];
         }
         cout << endl;
     }
