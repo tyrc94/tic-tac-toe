@@ -31,19 +31,19 @@ int game_over(Game g){
         return g.board[0][0];
     }
     if(g.board[1][0] != 0 && g.board[1][0] == g.board[1][1] && g.board[1][0] == g.board[0][2]){
-        return g.board[0][0];
+        return g.board[1][0];
     }
     if(g.board[2][0] != 0 && g.board[2][0] == g.board[2][1] && g.board[2][0] == g.board[2][2]){
-        return g.board[0][0];
+        return g.board[2][0];
     }    
     if(g.board[0][1] != 0 && g.board[0][1] == g.board[1][1] && g.board[0][1] == g.board[2][1]){
-        return g.board[0][0];
+        return g.board[0][1];
     }
     if(g.board[0][2] != 0 && g.board[0][2] == g.board[1][2] && g.board[0][2] == g.board[2][2]){
-        return g.board[0][0];
+        return g.board[0][2];
     }    
     if(g.board[2][0] != 0 && g.board[2][0] == g.board[1][1] && g.board[2][0] == g.board[0][2]){
-        return g.board[0][0];
+        return g.board[2][0];
     }
     for(int x = 0; x < g.board.size(); x++){
         for(int y = 0; y < g.board.size(); y++){
