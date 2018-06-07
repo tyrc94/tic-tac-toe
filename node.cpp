@@ -23,19 +23,9 @@ void expand(Node* current_node) {
                 new_node.state = new_state;
                 new_node.parent = current_node;
                 current_node -> children.push_back(new_node);
-
-                // for(int x = 0; x < new_state.size(); x++){
-                //     for(int y = 0; y < new_state[x].size(); y++){
-                //         cout << new_state[x][y];
-                //     }
-                //     cout << endl;
-                // }
-                // cout << endl;
             }
         }
-
     }
-
 }
 
 
