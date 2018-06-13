@@ -1,8 +1,7 @@
 #include <iostream>
 #include <vector>
-#include "ai.cpp"
 #include <utility>
-//#include "game_over.cpp"
+#include "ai.cpp"
 
 using namespace std;
 
@@ -35,7 +34,6 @@ void make_move(Game* g, int row, int col){
 void play_game(){
     int game_state = -1;
     Game game;
-    AI ai;
     while(game_state == -1){
         int row, col;
         if(game.current_player == 1){
@@ -45,11 +43,9 @@ void play_game(){
             cout << "Column: ";
             cin >> col;
         } else {
-            pair <int, int> ai_move = move_ai(ai, game.board);
+            pair <int, int> ai_move = move_ai(game.board);
             row = ai_move.first;
             col = ai_move.second;
-            cout << row << endl;
-            cout << col << endl;
         }
         
         try{

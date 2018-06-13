@@ -6,14 +6,11 @@
 
 using namespace std;
 
-struct AI{
-
-};
 
 void min_value(Node* node);
 void max_value(Node* node);
 
-pair<int, int> move_ai(AI ai, vector <vector <int>> board){
+pair<int, int> move_ai(vector <vector <int>> board){
     Node root;
     root.state = board;
     root.player = 1;
